@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>&raquo;&raquo;&raquo;Login&raquo;&raquo;&raquo;</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/themes/default/app.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+    </head>
+    <body>
+<div data-role="page" data-theme="b" id="splash" style="background-color: #balck;"> 
+    <div class="splash">
+        <!--img src="img/jquery-logo.png" alt="splash"/-->
+        <!--img src="img/index.jpg" alt="splash"/-->
+        <!--img src="img/bg25.png" alt="splash"/-->
+        <!--img src="img/26.gif" alt="splash"/-->
+        <img src="img/670092_170x100.gif" alt="splash"/>
+    </div>
+</div>
+
+        
+        <div data-role="page" id="login">
+
+            <div data-role="header" data-position="fixed" class="ui-bar" data-theme="b" >
+                <h1>Login</h1>
+                
+         </div>
+                <div data-role="content"   align="center">
+                    
+                    <form id="frm1">
+                    <div class="ui-field-contain" >
+                        <label for="txt-name">:: Username :: </label>
+                        <input type="text" id="txt-name">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="txt-pwd">:: Password :: </label>
+                        <input type="password" id="txt-pwd">
+                    </div>
+                        
+                    </form>
+                        
+                        
+                    </div>    
+                        
+               
+
+
+                
+            <footer data-role="footer" class="ui-bar" align="center">
+                
+                <a data-transition="flow" data-role="button" data-inline="true" data-icon="carat-r" rel="external"  href="main.html" data-theme="b">Login</a>
+                <!--input type="button" data-inline="true" data-icon="carat-r" value="Login" data-transition="flow" href="main.html"-->
+                        
+                <a data-transition="flow" data-role="button" data-inline="true" data-icon="user" href="#register"  data-theme="b">Register</a>
+                
+                
+                <a href="test.php" rel="external" data-role="button" >PHP</a>
+                
+                
+                
+            </footer>
+          </div>
+        
+        
+        <!--Page Register-->
+        <section data-role="dialog" id="register">
+            <!--div data-role="page" id="page2"-->
+            <div data-role="header">
+                <h1>Register</h1>
+            </div>
+            
+            <div data-role="content" align="center">
+
+
+                <form id="frm1">
+                    <div class="ui-field-contain" >
+                        <label for="txt-name">Username : </label>
+                        <input type="text" id="txt-name">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="txt-pwd">Password : </label>
+                        <input type="password" id="txt-pwd">
+                    </div>
+                        
+                 </form>
+               
+                <!--a data-transition="flow"  data-icon="check" href="" data-rel="back" data-role="button">Submit</a-->
+                <input type="button" data-inline="true" data-icon="check" value="Submit" data-transition="flow" data-theme="a">
+                <a data-transition="flow" data-inline="true" data-icon="back" href="" data-rel="back" data-role="button" data-theme="b">Back</a>
+                
+
+            </div>
+            
+            <!--div data-role="footer">
+                <h4>&copy; 2558 EGAT</h4>
+            </div-->
+            <footer data-role="footer">
+                <h4>&copy; &raquo; &reg;</h4>
+            </footer>
+        </section>
+        <!--/div-->
+        
+         
+        
+
+    </body>
+</html>
+

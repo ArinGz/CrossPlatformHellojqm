@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>&raquo;&raquo;&raquo;Main&raquo;&raquo;&raquo;</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/themes/default/app.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+    </head>
+    <body>
+       
+        
+        <div data-role="page" id="main">
+
+            <div data-role="header" data-position="fixed" class="ui-bar" >
+                <h1>Main Menu</h1>
+                
+         </div>
+                <div data-role="content"   align="center" data-theme="b">
+                    
+                    <a data-transition="flow" data-role="button" data-inline="true" data-icon="heart" href="#list">List</a>
+                    
+                    <!--a data-transition="flow" data-role="button" data-inline="true" data-icon="bullets" href="#list" data-theme="b">List</a-->
+                    
+                    <a data-transition="flow" data-role="button" data-inline="true" data-icon="info" href="#aboutus">About us</a>
+                    
+                    <a data-transition="flow" data-role="button" data-inline="true" data-icon="power" href="index.html">Logout</a>
+                    
+                        
+                  
+                        
+                        
+                 </div>    
+                        
+               
+
+
+                
+            <footer data-role="footer" class="ui-bar" align="center">
+                
+                <a data-transition="flow" data-role="button" data-inline="true" data-icon="carat-r" rel="external" href="index.html" data-theme="b">Login</a>
+                <!--input type="button" data-inline="true" data-icon="carat-r" value="Login" data-transition="flow" href="main.html"-->
+                        
+                <a data-transition="flow" data-role="button" data-inline="true" data-icon="user" rel="external" data-rel="dialog" href="index.html#register" data-theme="b">Register</a>
+                
+                <a href="test.php" rel="external" data-role="button" data-theme="a">PHP</a>
+                
+            </footer>
+          </div>
+        
+        
+        
+        
+        
+        <!--Page About US-->
+        <div data-role="dialog" id="aboutus">
+            <!--div data-role="page" id="page2"-->
+            <div data-role="header">
+                <h1>About Us</h1>
+
+
+
+            </div>
+            <div data-role="content">
+
+
+                <p>Hello this is <a data-rel="popup" href="http://www.baac.or.th/baac_en/content-contact.php">BAAC</a></p>
+                
+
+                <a data-transition="filp"  data-icon="back" href="" data-rel="back" data-role="button" data-theme="b">Back</a>
+
+            </div>
+
+
+
+
+
+
+            <!--div data-role="footer">
+                <h4>&copy; 2558 EGAT</h4>
+            </div-->
+            <footer data-role="footer">
+                <h4>&copy; &raquo; &reg;</h4>
+            </footer>
+        </div>
+        <!--/div-->
+        
+        
+        
+        
+        
+        
+          <section data-role="page" id="list">
+                <header data-role="header">
+                     <a data-transition="filp"  data-icon="back" href="" data-rel="back" data-role="button" data-theme="b">Back</a>
+                    <h2>List</h2>
+                </header>
+                <div data-role="content">
+                    
+                    <!--auto correction-->
+                    
+                    <!--ul data-role="listview" data-inset="true" id="lv1">
+                        <li><a>hellos</a></li>
+                    </ul>
+                    
+                    <form class="ui-filterable">
+                    <input id="autoc-input" type="search">
+                    
+                    </form>
+                    <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#autoc-input">
+                        <li>BKK</li>
+                        <li>Non</li>
+                    </ul-->
+                    
+                    <div data-role ="collapsible-set"  data-theme="b">
+                    <div data-role="collapsible" >
+                        <h2>Collapsible List</h2>
+                    <ul data-role="listview" data-inset="false" data-autodividers="true">
+                        <li data-icon="gear"><a href=""><img src="img/tumblr_mzrgkqzwjP1r9z0ano1_500.gif" alt=""/>A</a></li>
+                        <li data-icon="gear"><a href="">
+                                <img src="img/Oso-Polar-Divertido-68037.gif" alt=""/>
+                                Aa</a></li>
+                        <li data-role="list-divider">------------</li>
+                        <li><a>B</a></li>
+                        <li><a>Bb</a></li>
+                        <li data-icon="false"><a>C</a></li>
+                        <li data-icon="false"><a>Cc</a></li>
+                    </ul>
+                     </div>
+                        
+                    <br>
+                    
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h2>Collapsible List</h2>
+                    <ol data-role="listview" data-split-icon="navigation" data-filter="true"
+                         data-filter-placeholder="Filter here!!"  id="lv3">
+                         <li>
+                             <a href="">
+                                 <img src="img/MetalSlugTank.gif" alt=""/>
+                                 
+                                 <h3>A</h3>
+                                 <p>1234</p>
+                             </a>
+                             <a href="">A</a>
+                         </li>
+                         <li><a>
+                                
+                                 <img src="img/tumblr_mzrgkqzwjP1r9z0ano1_500.gif" alt=""/>
+                                 B
+                                 <p class="ui-li-aside ui-li-count">12</p>   
+                             </a>
+                         </li>
+                        <li>
+                            <img src="img/tumblr_losdfsGx0r1qf72le.gif~c200.gif" alt=""/>
+                            C
+                        </li>
+                        
+                    </ol>
+                    
+                    </div>
+                    
+                    </div>
+                   </div>
+                    
+            </section>
+        
+        <script type="text/javascript">
+           var BService_url = "http://172.18.27.12:8080/icon_services/icons_list.php"
+           var icons;
+           
+           $("#list").on("pageinit",function(){
+               $("#lv3 li").remove();
+           });
+            $("#list").on("pagebeforeshow",function(){
+                $.getJSON(BService_url,function(data){
+                    $("#lv3 li").remove();
+                    icons=data.items;
+                    $.each(icons,function(index, icons){
+                        $("#lv3").append("<li><a><h3>"+icons.icon_value+"</h3><p>"+icons.icon_description+"</p></a></li>")
+                    });
+                    $("#lv3").listview("refresh");
+                    
+                    
+                });
+                
+            });
+            
+            
+        </script>
+        
+        
+    </body>
+</html>
